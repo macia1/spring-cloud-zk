@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: crawlerCore
+  cloud:
+    zookeeper:
+      config:
+        # 根路径
+        root: conf
+        # 环境分割符
+        profile-separator: "-"
+        enabled: true
+      connect-string: 127.0.0.1:2181
+# 订阅路径为 /conf/crawlerCore-dev
